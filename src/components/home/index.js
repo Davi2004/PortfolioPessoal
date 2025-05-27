@@ -9,6 +9,32 @@ const skills = [
     { name: 'Node JS', img: 'https://cdn-icons-png.flaticon.com/128/919/919825.png'},
     { name: 'Git', img: 'https://cdn-icons-png.flaticon.com/128/11518/11518876.png'},
     { name: 'GitHub', img: 'https://cdn-icons-png.flaticon.com/128/733/733609.png'},
+    { name: 'Figma', img: 'https://cdn-icons-png.flaticon.com/128/5968/5968705.png'},
+    { name: 'SQL Server', img: 'https://cdn-icons-png.flaticon.com/128/5732/5732837.png'},
+]
+
+const iconMap = {
+  html: skills.find(s => s.name.toLowerCase().includes('html'))?.img,
+  css: skills.find(s => s.name.toLowerCase().includes('css'))?.img,
+  javascript: skills.find(s => s.name.toLowerCase().includes('javascript'))?.img,
+  react: skills.find(s => s.name.toLowerCase().includes('react'))?.img,
+  node: skills.find(s => s.name.toLowerCase().includes('node'))?.img,
+  git: skills.find(s => s.name.toLowerCase().includes('git'))?.img,
+  github: skills.find(s => s.name.toLowerCase().includes('github'))?.img,
+  figma: skills.find(s => s.name.toLowerCase().includes('figma'))?.img,
+  sql: skills.find(s => s.name.toLowerCase().includes('sql'))?.img,
+  tailwindcss: "https://images.seeklogo.com/logo-png/35/2/tailwind-css-logo-png_seeklogo-354675.png"
+};
+
+const projetos = [
+    {
+        titulo: "DevBurguer",
+        descricao: "A DevBurguer é uma landing page desenvolvida com HTML, JavaScript e Tailwind CSS, criada com o objetivo de simular um sistema de agendamento online para uma hamburgueria artesanal. Neste projeto, trabalhei com foco em: Layout 100% responsivo, adaptado para diferentes tamanhos de tela. Design moderno e minimalista, utilizando a flexibilidade do Tailwind para estilização rápida e eficiente. Organização semântica do HTML, garantindo uma boa estrutura e legibilidade do código. Experiência visual fluida, com transições suaves e elementos bem posicionados.",
+        imagem: "./DevBurguer.png",
+        tecnologias: ["html","javascript", "tailwindcss"],
+        linkProjeto: "https://projeto-devburgueria.vercel.app",
+        linkRepositorio: "https://github.com/Davi2004/Projeto-DevBurgueria"
+    },
 ]
 
 function Home() {
@@ -86,8 +112,63 @@ function Home() {
                 
             </section>
 
-            <section id='projetos'></section>
-            
+            <section id='projetos' className='projetos'>
+
+                <div className="containerProjetos">
+                    
+                    <h1>Projetos</h1>
+                    <p>Veja alguns projetos que desenvolvi.</p>
+
+                    <div className="gridProjetos">
+
+                        {projetos.map((projeto, i) => (
+
+                            <div className="cardProjetoHorizontal" key={i}>
+                            
+                                <div className="imagemContainer">
+                                    <img src={projeto.imagem} alt={projeto.titulo} className="imagemProjetoHorizontal" />
+                                </div>
+
+                                <div className="infoProjetoHorizontal">
+                                    
+                                    <div className="headerProjeto">
+                                        <h3>{projeto.titulo}</h3>
+                                        
+                                        <div className="techs">
+                                            {projeto.tecnologias.map((tech, j) => (
+                                            <img
+                                                key={j}
+                                                src={iconMap[tech.toLowerCase()]}
+                                                alt={tech}
+                                                title={tech}
+                                                className="iconTech"
+                                            />
+                                            ))}
+                                        </div>
+
+                                    </div>
+
+                                    <p>{projeto.descricao}</p>
+
+                                    <div className="botoesProjeto">
+                                        
+                                        <a href={projeto.linkProjeto} className="btn" target="_blank" rel="noreferrer">Ver Projeto</a>
+                                        <a href={projeto.linkRepositorio} className="btn" target="_blank" rel="noreferrer">Repositório</a>
+                                        
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            
+                        ))}
+                    
+                    </div>
+
+                </div>
+
+            </section>
+
             <section id='contato'></section>
 
         </main>
