@@ -1,5 +1,6 @@
 import '../home/style.css'
 import { Mail, FileUser, Linkedin, Github } from 'lucide-react'
+import { PhoneCall, House, MessageCircle } from 'lucide-react';
 
 const skills = [
     { name: 'HTML', img: 'https://cdn-icons-png.flaticon.com/128/174/174854.png'},
@@ -35,6 +36,30 @@ const projetos = [
         linkProjeto: "https://projeto-devburgueria.vercel.app",
         linkRepositorio: "https://github.com/Davi2004/Projeto-DevBurgueria"
     },
+    {
+        titulo: "DevBarber",
+        descricao: "O DevBarber é um site institucional moderno e responsivo, desenvolvido com HTML, SCSS e JavaScript, com o objetivo de representar uma barbearia fictícia que valoriza o estilo, a tradição e a experiência do cliente. Neste projeto, temos por destaque, o layout responsivo, adaptado para todos os dispositivos, com foco em acessibilidade e boa navegação, design elegante e masculino, com uma paleta de cores sóbria e elementos que remetem ao universo das barbearias clássicas, interatividade como animações, efeitos de rolagem suave e navegação dinâmica e uma estilização modular, permitindo melhor organização e reaproveitamento de estilos.",
+        imagem: "./DevBarber.png",
+        tecnologias: ["html", "css", "javascript"],
+        linkProjeto: "https://projeto-devbarber.vercel.app/",
+        linkRepositorio: "https://github.com/Davi2004/Projeto-DevBarber"
+    },
+    {
+        titulo: "TimeWiz",
+        descricao: "O TimeWiz é um website criado para ser um aliado perfeito na gestão do tempo e na organização das suas tarefas diárias! Sendo projetado para ajudar você a maximizar sua produtividade e manter-se no controle de sua agenda. Com uma interface intuitiva e recursos personalizados, você pode facilmente criar tarefas e monitorar o seu progresso durante o dia.",
+        imagem: "./TimeWiz.png",
+        tecnologias: ["html", "css", "javascript", "figma"],
+        linkProjeto: "https://projeto-timewiz.vercel.app/",
+        linkRepositorio: "https://github.com/Davi2004/Projeto-PlanejadorAt"
+    },
+    {
+        titulo: "PrimeFlix",
+        descricao: "O PrimeFlix é um projeto desenvolvido com React e CSS puro, criado com o objetivo de simular um sistema de filmes online com catálogo atualizado por uma API. Neste projeto, foi trabalhado com foco em: Layout 100% responsivo sendo adaptado para diferentes tamanhos de tela. Design moderno e minimalista, utilizando a flexibilidade do CSS. Organização do React, garantindo uma boa estrutura e legibilidade do código. Experiência visual fluida, com transições suaves e elementos bem posicionados.",
+        imagem: "./PrimeFlix.png",
+        tecnologias: ["react", "css"],
+        linkProjeto: "https://prime-flix-mauve-psi.vercel.app",
+        linkRepositorio: "https://github.com/Davi2004/PrimeFlix"
+    },
 ]
 
 function Home() {
@@ -55,7 +80,7 @@ function Home() {
             
                         <div className='buttons'>
                             <a href="/Currículo.pdf" target='_blank' rel='noreferrer' className='btn'> <FileUser size={20} color='black'/> Download CV </a>
-                            <a href="mailto: davipereirar39@gmail.com" target='_blank' rel='noreferrer' className='btn'> <Mail size={20} color='black'/> Entre em contato </a>
+                            <a href="https://wa.me/5577991718244?text=Olá,%20gostaria%20de%20conversar%20sobre%20algumas%20ideias!" target='_blank' rel='noreferrer' className='btn'> <Mail size={20} color='black'/> Entre em contato </a>
                         </div>
                     </div>
                 </div>
@@ -169,9 +194,34 @@ function Home() {
 
             </section>
 
-            <section id='contato'></section>
+            <section id='contato' className='contatos'>
+                
+                <h1> Formas de Contato: </h1>
 
+                <div className='containerContatos'>
+
+
+                    <div className='colors one'>
+                        <PhoneCall size={50} color='#08082F'/>
+                        <p> +55 (77) 99171-8244 </p>
+                    </div>
+
+                    <div className='colors two'>
+                        <House size={50} color='#08082F'/>
+                        <p> Localizado em: <br/><br/> Povoado Malhada Grande 15 Cabrália | Piatã BA </p>
+                    </div>
+                    
+                    <div className='colors three'>
+                        <MessageCircle size={50} color='#08082F'/>
+                        <a href='mailto:davipereirar39@gmail.com'> davipereirar39@gmail.com </a>
+                    </div>
+                                        
+                </div>
+                
+            </section>            
+            
         </main>
+
     );
 }
 

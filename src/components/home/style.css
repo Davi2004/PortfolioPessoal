@@ -1,3 +1,5 @@
+/* Área de Início */
+
 .container {
     background-color: #1e1e1e;
     padding: 60px 20px;
@@ -78,7 +80,7 @@
     background-color: #eeeeee;
 }
 
-/* SOBRE */
+/* Área do Sobre */
 
 .sobre {
     background: #1e1e1e;
@@ -170,7 +172,7 @@
     }
 }
 
-/* Hard Skills */
+/* Área dos HardSkills */
 
 .hardSkills {
     background-color: #1e1e1e;
@@ -236,7 +238,7 @@
     transform: scale(1.1);
 }
 
-/* Projetos: */
+/* Área dos Projetos: */
 
 .projetos {
     background-color: #1e1e1e;
@@ -255,9 +257,11 @@
         text-align: center;
         margin-bottom: 10px;
         font-size: 40px;
+        filter: drop-shadow(3px 3px 1px rgb(0, 0, 0));
     }
 
     p {
+        filter: drop-shadow(2px 2px 1px rgb(0, 0, 0));
         text-align: center;
         margin-bottom: 30px;
     }
@@ -337,4 +341,88 @@
 
 .botoesProjeto .btn:hover {
     background-color: #ddd;
+}
+
+/* Área de Contatos: */
+
+.contatos {
+    background-color: #1e1e1e;
+    color: #FFF;
+    min-height: 80vh;
+    text-align: center;    
+    
+    h1{
+        font-size: 35px;
+        filter: drop-shadow(3px 3px 1px rgb(0, 0, 0));
+    }
+}
+
+.containerContatos {
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 7% auto;
+
+    .colors {
+        width: 300px;
+        height: 300px;
+        background-color: #777;
+        border-radius: 15px;
+        border: 2px solid black;
+    }
+
+    .one, .two, .three {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px;
+
+        color: #111;
+        font-weight: bold;                
+        
+        a {
+            color: #111;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+        
+    }
+    
+}
+
+/* Área do Footer */
+
+footer {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    background-color: #000000;
+    
+    .menu {
+        margin: 20px 0;
+        
+        img {
+            width: 30px;
+        }
+    }
+    
+    p {
+        color: #FFF;
+        font-weight: bold;
+    }
+    
+    .logoPessoal {
+        margin: 20px 0;
+        width: 100px;
+    }
+    
 }
