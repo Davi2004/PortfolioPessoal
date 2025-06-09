@@ -130,6 +130,7 @@
         margin-bottom: 15px;
         line-height: 1.6;
         filter: drop-shadow(3px 3px 1px rgb(0, 0, 0));
+        text-align: justify;
     }
     }
 
@@ -349,7 +350,7 @@
     background-color: #1e1e1e;
     color: #FFF;
     min-height: 80vh;
-    text-align: center;    
+    text-align: center;
     
     h1{
         font-size: 35px;
@@ -393,36 +394,6 @@
             text-underline-offset: 4px;
         }
         
-    }
-    
-}
-
-/* Área do Footer */
-
-footer {
-
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    
-    background-color: #000000;
-    
-    .menu {
-        margin: 20px 0;
-        
-        img {
-            width: 30px;
-        }
-    }
-    
-    p {
-        color: #FFF;
-        font-weight: bold;
-    }
-    
-    .logoPessoal {
-        margin: 20px 0;
-        width: 100px;
     }
     
 }

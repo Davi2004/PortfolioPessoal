@@ -1,4 +1,5 @@
 import '../home/style.css'
+import '../home/responsividade.css'
 import { Mail, FileUser, Linkedin, Github } from 'lucide-react'
 import { PhoneCall, House, MessageCircle } from 'lucide-react';
 
@@ -87,6 +88,7 @@ function Home() {
             </section>
 
             <section id='sobre' className='sobre'>
+                
                 <div className='containerSobre'>
 
                     <div className='texto'>
@@ -115,6 +117,7 @@ function Home() {
                     </div>
                     
                 </div>
+                
             </section>
 
             <section id="hardskills" className="hardSkills">
