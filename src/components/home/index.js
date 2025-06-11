@@ -31,7 +31,7 @@ const iconMap = {
 const projetos = [
     {
         titulo: "DevBurguer",
-        descricao: "A DevBurguer é uma landing page desenvolvida com HTML, JavaScript e Tailwind CSS, criada com o objetivo de simular um sistema de agendamento online para uma hamburgueria artesanal. Neste projeto, trabalhei com foco em: Layout 100% responsivo, adaptado para diferentes tamanhos de tela. Design moderno e minimalista, utilizando a flexibilidade do Tailwind para estilização rápida e eficiente. Organização semântica do HTML, garantindo uma boa estrutura e legibilidade do código. Experiência visual fluida, com transições suaves e elementos bem posicionados.",
+        descricao: "A DevBurguer é uma landing page, criada com o objetivo de simular um sistema de agendamento online para uma hamburgueria artesanal. Neste projeto, trabalhei com foco em: Layout 100% responsivo, adaptado para diferentes tamanhos de tela. Design moderno e minimalista, utilizando a flexibilidade do Tailwind para estilização rápida e eficiente. Organização semântica do HTML, garantindo uma boa estrutura e legibilidade do código. Experiência visual fluida, com transições suaves e elementos bem posicionados.",
         imagem: "./DevBurguer.png",
         tecnologias: ["html","javascript", "tailwindcss"],
         linkProjeto: "https://projeto-devburgueria.vercel.app",
@@ -39,7 +39,7 @@ const projetos = [
     },
     {
         titulo: "DevBarber",
-        descricao: "O DevBarber é um site institucional moderno e responsivo, desenvolvido com HTML, SCSS e JavaScript, com o objetivo de representar uma barbearia fictícia que valoriza o estilo, a tradição e a experiência do cliente. Neste projeto, temos por destaque, o layout responsivo, adaptado para todos os dispositivos, com foco em acessibilidade e boa navegação, design elegante e masculino, com uma paleta de cores sóbria e elementos que remetem ao universo das barbearias clássicas, interatividade como animações, efeitos de rolagem suave e navegação dinâmica e uma estilização modular, permitindo melhor organização e reaproveitamento de estilos.",
+        descricao: "O DevBarber é um site institucional moderno e responsivo, desenvolvido com o objetivo de representar uma barbearia fictícia que valoriza o estilo, a tradição e a experiência do cliente. Neste projeto, temos por destaque, o layout responsivo, adaptado para todos os dispositivos, com foco em acessibilidade e boa navegação, design elegante e masculino, com uma paleta de cores sóbria e elementos que remetem ao universo das barbearias clássicas, interatividade como animações, efeitos de rolagem suave e navegação dinâmica e uma estilização modular, permitindo melhor organização e reaproveitamento de estilos.",
         imagem: "./DevBarber.png",
         tecnologias: ["html", "css", "javascript"],
         linkProjeto: "https://projeto-devbarber.vercel.app/",
@@ -55,7 +55,7 @@ const projetos = [
     },
     {
         titulo: "PrimeFlix",
-        descricao: "O PrimeFlix é um projeto desenvolvido com React e CSS puro, criado com o objetivo de simular um sistema de filmes online com catálogo atualizado por uma API. Neste projeto, foi trabalhado com foco em: Layout 100% responsivo sendo adaptado para diferentes tamanhos de tela. Design moderno e minimalista, utilizando a flexibilidade do CSS. Organização do React, garantindo uma boa estrutura e legibilidade do código. Experiência visual fluida, com transições suaves e elementos bem posicionados.",
+        descricao: "O PrimeFlix é um projeto criado com o objetivo de simular um sistema de filmes online com catálogo atualizado por uma API. Neste projeto, foi trabalhado com foco em: Layout 100% responsivo sendo adaptado para diferentes tamanhos de tela. Design moderno e minimalista, utilizando a flexibilidade do CSS. Organização do React, garantindo uma boa estrutura e legibilidade do código. Experiência visual fluida, com transições suaves e elementos bem posicionados.",
         imagem: "./PrimeFlix.png",
         tecnologias: ["react", "css"],
         linkProjeto: "https://prime-flix-mauve-psi.vercel.app",
@@ -67,57 +67,35 @@ function Home() {
     return (
         <main>
             
-            <section className='container'>
+            <section className='hero'>
                 <div className='content'>
-            
-                    <div className='left'>
-                        <img src="/perfil.png" alt="Foto de perfil" className='profileImg'/>
-                    </div>
-            
-                    <div className='right'>
+
+                    <div className='conteudo'>
             
                         <h1> Davi Rocha Pereira </h1>
                         <h2> Desenvolvedor Web </h2>
-            
+
                         <div className='buttons'>
+                            <a href="https://github.com/Davi2004" target='_blank' rel='noreferrer' className="btn"> <Github size={20} color='black' /> GitHub </a>
+                            
                             <a href="/Currículo.pdf" target='_blank' rel='noreferrer' className='btn'> <FileUser size={20} color='black'/> Download CV </a>
+
                             <a href="https://wa.me/5577991718244?text=Olá,%20gostaria%20de%20conversar%20sobre%20algumas%20ideias!" target='_blank' rel='noreferrer' className='btn'> <Mail size={20} color='black'/> Entre em contato </a>
+
+                            <a href="https://www.linkedin.com/in/davi-rocha-pereira-809548225/" target='_blank' rel='noreferrer' className="btn"> <Linkedin size={20} color='black' /> LinkedIn </a>
                         </div>
-                    </div>
-                </div>
-            </section>
 
-            <section id='sobre' className='sobre'>
-                
-                <div className='containerSobre'>
-
-                    <div className='texto'>
-
-                        <h3> SOBRE MIM </h3>
-                        <h2> Sou o Davi... </h2>
                         <p>
-                            Sou um entusiasta da tecnologia, com verdadeira paixão pela criação de interfaces web modernas. Estou em constante aprendizado e busco sempre melhorar minhas habilidades como desenvolvedor, buscando estar atento e com foco na usabilidade do usuário, performance dos projetos e boas práticas de código.
+                            Olá, sou estudante de Análise e desenvolvimento de Sistemas na Impacta SP, estou em constante aprendizado e busco sempre melhorar minhas habilidades como desenvolvedor, buscando estar atento e com foco na usabilidade do usuário, performance dos projetos e boas práticas de código.
                         </p>
+
                         <p>
                             Sou movido por desafios e estou em constante busca por oportunidades que impulsionem meu crescimento profissional. Tenho como objetivo criar experiências de usuário envolventes, acessíveis e eficientes. Este é o início da minha jornada no desenvolvimento web, e estou em busca da minha primeira oportunidade profissional em um ambiente inovador, onde eu possa contribuir com dedicação, aprender com profissionais experientes e desenvolver soluções que gerem impacto real.
                         </p>
-                        
+
                     </div>
 
-                    <div className='conteudo-midiatico'>
-
-                        <div className='aspas'>“</div>
-                        <img src="./perfil-sobre.png" alt="Foto de perfil do sobre"/>
-
-                        <div className='redesSociais'>
-                            <a href="https://github.com/Davi2004" target='_blank' rel='noreferrer'> <Github size={30} color='white' /> </a>
-                            <a href="https://www.linkedin.com/in/davi-rocha-pereira-809548225/" target='_blank' rel='noreferrer'> <Linkedin size={30} color='white' /> </a>
-                        </div>
-                        
-                    </div>
-                    
                 </div>
-                
             </section>
 
             <section id="hardskills" className="hardSkills">

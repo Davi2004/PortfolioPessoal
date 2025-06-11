@@ -15,7 +15,6 @@ function Header() {
 
                 <ul className='menu'>
                     <li> <a href="#/" onClick={scrollTop}> Início </a> </li>
-                    <li> <a href="#sobre"> Sobre </a> </li>
                     <li> <a href="#hardskills"> HardSkills </a> </li>
                     <li> <a href="#projetos"> Projetos </a> </li>
                     <li> <a href="#contato"> Contato </a> </li>

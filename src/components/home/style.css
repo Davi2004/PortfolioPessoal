@@ -1,8 +1,6 @@
 /* Área de Início */
 
-.container {
-    background-color: #1e1e1e;
-    padding: 60px 20px;
+.hero {
     display: flex;
     justify-content: center;
     height: calc(100vh - 80px);
@@ -11,46 +9,41 @@
 
 .content {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    gap: 70px;
     color: #ffffff;
     flex-wrap: wrap; /* Importante para a responsividade */
 }
 
-.left img {
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    border: 3px solid #555;
-    animation: float 6s ease-in-out infinite;
-}
-
-@keyframes float {
-    0%,
-    100% {
-        transform: translateY(0);
+.conteudo { 
+    background-color: #111;
+    box-shadow: 0 0 30px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    
+    max-width: 1000px;
+    padding: 30px;
+    
+    h1 {
+        font-size: 2.5rem;
+        filter: drop-shadow(3px 3px 1px rgb(0, 0, 0));
     }
-    50% {
-        transform: translateY(-30px);
+
+    h2 {
+        color: #ccc;
+        filter: drop-shadow(2px 2px 1px rgb(0, 0, 0));
+
+        font-size: 1.5rem;
+        margin: 10px 0 20px;
+        text-align: center;
     }
-}
 
-.right h1 {
-    font-size: 2.5rem;
-    margin: 0;
-    filter: drop-shadow(3px 3px 1px rgb(0, 0, 0));
-}
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+        filter: drop-shadow(3px 3px 1px rgb(0, 0, 0));
+        text-align: justify;
+    }
 
-.right h2 {
-    color: #ccc;
-    filter: drop-shadow(2px 2px 1px rgb(0, 0, 0));
-
-    font-size: 1.5rem;
-    margin: 10px 0 30px;
-    text-align: center;
 }
 
 .buttons {
@@ -58,6 +51,7 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
+    margin-bottom: 20px;
 }
 
 .btn {
@@ -72,7 +66,7 @@
     border: 2px solid black;
     border-radius: 8px;
 
-    padding: 10px 20px;
+    padding: 10px;
     transition: all 1s ease;
 }
 
@@ -80,107 +74,13 @@
     background-color: #eeeeee;
 }
 
-/* Área do Sobre */
-
-.sobre {
-    background: #1e1e1e;
-    padding: 100px 20px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.containerSobre {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 40px;
-
-    border: 2px solid #fff;
-    border-radius: 20px;
-
-    background-color: #111;
-    color: #fff;
-    box-shadow: 0 0 50px;
-
-    padding: 50px;
-    max-width: 1000px;
-}
-
-.texto {
-    flex: 1 1 500px;
-
-    h3 {
-        font-size: 1rem;
-        color: #999;
-        margin-bottom: 10px;
-        filter: drop-shadow(3px 3px 1px rgb(0, 0, 0));
-    }
-
-    h2 {
-        font-size: 2rem;
-        margin-bottom: 20px;
-        filter: drop-shadow(3px 3px 1px rgb(0, 0, 0));
-    }
-
-    p {
-        font-size: 1rem;
-        margin-bottom: 15px;
-        line-height: 1.6;
-        filter: drop-shadow(3px 3px 1px rgb(0, 0, 0));
-        text-align: justify;
-    }
-    }
-
-    .conteudo-midiatico {
-    text-align: center;
-    position: relative;
-
-    .aspas {
-        position: absolute;
-        top: -80px;
-        right: -10px;
-        font-size: 130px;
-        color: #777;
-        user-select: none;
-    }
-
-    img {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        border: 3px solid #fff;
-        box-shadow: 0px 0px 15px #7a7ad4;
-        object-fit: cover;
-        margin-bottom: 10px;
-    }
-}
-
-.redesSociais {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    margin-top: 10px;
-
-    a {
-        transition: transform 0.3s ease;
-    }
-
-    a:hover {
-        transform: scale(1.1);
-    }
-}
-
 /* Área dos HardSkills */
 
 .hardSkills {
-    background-color: #1e1e1e;
     color: white;
     text-align: center;
-    min-height: 100vh;
     
+    height: calc(120vh - 80px);    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -242,11 +142,10 @@
 /* Área dos Projetos: */
 
 .projetos {
-    background-color: #1e1e1e;
-    padding: 60px 20px;
     color: white;
-    min-height: 100vh;
 
+    margin: 50px;
+    
     display: flex;
 }
 
@@ -347,9 +246,8 @@
 /* Área de Contatos: */
 
 .contatos {
-    background-color: #1e1e1e;
     color: #FFF;
-    min-height: 80vh;
+    min-height: calc(100vh - 80px);
     text-align: center;
     
     h1{
@@ -363,7 +261,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 7% auto;
+    margin: 12% auto;
 
     .colors {
         width: 300px;

@@ -5,16 +5,11 @@
         gap: 40px;
     }
 
-    .left img {
-        width: 280px;
-        height: 280px;
-    }
-
-    .right h1 {
+    .conteudo h1 {
         font-size: 2rem;
     }
 
-    .right h2 {
+    .conteudo h2 {
         font-size: 1.2rem;
     }
 
@@ -25,7 +20,7 @@
 }
 
 @media screen and (max-width: 764px) {
-    .container {
+    .hero {
         height: auto;
         padding: 40px 10px;
     }
@@ -37,16 +32,11 @@
         gap: 30px;
     }
 
-    .left img {
-        width: 200px;
-        height: 200px;
-    }
-
-    .right h1 {
+    .conteudo h1 {
         font-size: 1.8rem;
     }
 
-    .right h2 {
+    .conteudo h2 {
         font-size: 1rem;
     }
 
@@ -65,67 +55,40 @@
 
 @media screen and (max-width: 1023px) {
     
-    .containerSobre {
+    .conteudo {
         flex-direction: column;
         align-items: center;
         padding: 40px;
     }
 
-    .texto h2 {
+    h2 {
         font-size: 1.7rem;
     }
 
-    .texto p {
+    p {
         font-size: 0.95rem;
-    }
-
-    .conteudo-midiatico .aspas {
-        display: none;
-    }
-
-    .conteudo-midiatico img {
-        width: 280px;
-        height: 280px;
-    }
-
-    .redesSociais a svg {
-        width: 26px;
-        height: 26px;
     }
 }
 
 @media screen and (max-width: 764px) {
-    .containerSobre {
+    .conteudo {
         flex-direction: column;
         padding: 30px 20px;
         gap: 30px;
     }
 
-    .texto {
+    .conteudo {
         text-align: center;
     }
 
-    .texto h2 {
+    .conteudo h2 {
         font-size: 1.5rem;
     }
 
-    .texto p {
+    .conteudo p {
         font-size: 0.9rem;
     }
 
-    .conteudo-midiatico img {
-        width: 150px;
-        height: 150px;
-    }
-
-    .redesSociais {
-        gap: 20px;
-    }
-
-    .redesSociais a svg {
-        width: 24px;
-        height: 24px;
-    }
 }
 
 /* Área das HardSkills: */
