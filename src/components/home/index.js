@@ -86,11 +86,11 @@ function Home() {
                         </div>
 
                         <p>
-                            Olá, sou estudante de Análise e desenvolvimento de Sistemas na Impacta SP, estou em constante aprendizado e busco sempre melhorar minhas habilidades como desenvolvedor, buscando estar atento e com foco na usabilidade do usuário, performance dos projetos e boas práticas de código.
+                            Olá, sou formado em Análise e desenvolvimento de Sistemas na Impacta SP e estou em constante aprendizado. Tenho foco em usabilidade, performance e boas práticas de desenvolvimento, criando soluções que realmente agregam valor ao usuário.
                         </p>
 
                         <p>
-                            Sou movido por desafios e estou em constante busca por oportunidades que impulsionem meu crescimento profissional. Tenho como objetivo criar experiências de usuário envolventes, acessíveis e eficientes. Este é o início da minha jornada no desenvolvimento web, e estou em busca da minha primeira oportunidade profissional em um ambiente inovador, onde eu possa contribuir com dedicação, aprender com profissionais experientes e desenvolver soluções que gerem impacto real.
+                            Estou iniciando minha carreira em desenvolvimento web e procuro minha primeira oportunidade profissional para colaborar em projetos inovadores, aprender com profissionais experientes e contribuir para resultados concretos. Acredito que tecnologia é ferramenta de transformação e estou pronto para gerar impacto real com meu trabalho.
                         </p>
 
                     </div>
