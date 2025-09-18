@@ -143,11 +143,10 @@
 /* Área dos Projetos: */
 
 .projetos {
-    color: white;
-
-    margin: 50px;
-    
     display: flex;
+    color: white;
+    margin: 50px;
+    height: calc(170vh - 80px);
 }
 
 .containerProjetos {
@@ -176,7 +175,6 @@
 
 .cardProjetoHorizontal {
     display: flex;
-    flex-direction: row;
 
     overflow: hidden;
 
@@ -200,7 +198,6 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 
     p {
         text-align: justify;
@@ -224,7 +221,6 @@
 }
 
 .botoesProjeto {
-    margin-top: 15px;
     display: flex;
     justify-content: end;
     gap: 15px;
@@ -234,7 +230,7 @@
     padding: 8px 16px;
     background-color: #fff;
     color: black;
-    border-radius: 8px;
+    border-radius: 20px;
     text-decoration: none;
     font-weight: bold;
     transition: background 0.3s;
@@ -260,8 +256,9 @@
     max-width: 1000px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin: 12% auto;
+    justify-content: center;
+    gap: 50px;
+    margin: 5% auto;
 
     .colors {
         width: 300px;
@@ -271,7 +268,7 @@
         border: 2px solid black;
     }
 
-    .one, .two, .three {
+    .one, .two {
         display: flex;
         flex-direction: column;
         align-items: center;

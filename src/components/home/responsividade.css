@@ -62,12 +62,12 @@
     }
     
     .containerSkills {
-        max-width: 320px;
+        max-width: 350px;
         padding: 20px;
     }
     
     .icons-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 16px;
     }
 
@@ -84,29 +84,19 @@
 
 /* Área dos Projetos: */
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 764px) {
+    .projetos {
+        height: calc(210vh - 80px);
+    }
+    
     .cardProjetoHorizontal {
         display: flex;
         flex-direction: column; /* <<< imagem em cima, texto embaixo */
-
-        overflow: hidden;
-
-        background-color: #111;
-        border: 1px solid #fff;
-        border-radius: 12px;
     }
 
     .imagemContainer {
-        width: 100%;
         max-height: 250px; /* limita altura */
         overflow: hidden;
-    }
-
-    .imagemProjetoHorizontal {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
     }
 
     .botoesProjeto {
@@ -118,7 +108,6 @@
 /* Área dos Contatos: */
 
 @media screen and (max-width: 764px) {
-
     .contatos {
         h1 {
             margin-bottom: 30px;
@@ -127,11 +116,11 @@
     
     .containerContatos {
         flex-direction: column;
-        margin: auto;
-    }
+        gap: 30px;
 
-    .colors {
-        margin-bottom: 20px;
+        .colors {
+            width: 250px;
+            height: 250px;
+        }   
     }
-
 }

@@ -1,7 +1,7 @@
 import '../home/style.css'
 import '../home/responsividade.css'
-import { FileUser, Linkedin, Github } from 'lucide-react'
-import { PhoneCall, House, MessageCircle } from 'lucide-react';
+import { Mail, FileUser, Linkedin, Github } from 'lucide-react'
+import { PhoneCall, MessageCircle } from 'lucide-react';
 
 const skills = [
     { name: 'HTML', img: 'https://cdn-icons-png.flaticon.com/128/174/174854.png'},
@@ -173,14 +173,9 @@ function Home() {
                         <PhoneCall size={50} color='#08082F'/>
                         <p> +55 (77) 99171-8244 </p>
                     </div>
-
-                    <div className='colors two'>
-                        <House size={50} color='#08082F'/>
-                        <p> Localizado em: <br/><br/> Povoado Malhada Grande 15 Cabrália | Piatã BA </p>
-                    </div>
                     
-                    <div className='colors three'>
-                        <MessageCircle size={50} color='#08082F'/>
+                    <div className='colors two'>
+                        <Mail size={50} color='#08082F'/>
                         <a href='mailto:davipereirar39@gmail.com'> davipereirar39@gmail.com </a>
                     </div>
                                         
