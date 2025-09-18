@@ -1,6 +1,6 @@
 import '../home/style.css'
 import '../home/responsividade.css'
-import { Mail, FileUser, Linkedin, Github } from 'lucide-react'
+import { FileUser, Linkedin, Github } from 'lucide-react'
 import { PhoneCall, House, MessageCircle } from 'lucide-react';
 
 const skills = [
@@ -68,7 +68,7 @@ function Home() {
                         
                         <a href="/Currículo.pdf" target='_blank' rel='noreferrer' className='btn'> <FileUser size={20} color='black'/> Download CV </a>
 
-                        <a href="https://wa.me/5577991718244?text=Olá,%20gostaria%20de%20conversar%20sobre%20algumas%20ideias!" target='_blank' rel='noreferrer' className='btn'> <Mail size={20} color='black'/> Entre em contato </a>
+                        <a href="https://wa.me/5577991718244?text=Olá,%20gostaria%20de%20conversar%20sobre%20algumas%20ideias!" target='_blank' rel='noreferrer' className='btn'> <MessageCircle size={20} color='black'/> Entre em contato </a>
 
                         <a href="https://www.linkedin.com/in/davipereira-dev" target='_blank' rel='noreferrer' className="btn"> <Linkedin size={20} color='black' /> LinkedIn </a>
                     </div>
