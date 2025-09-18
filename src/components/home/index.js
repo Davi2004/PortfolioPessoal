@@ -34,22 +34,6 @@ const iconMap = {
 
 const projetos = [
     {
-        titulo: "DevBurguer",
-        descricao: "A DevBurguer é uma landing page, criada com o objetivo de simular um sistema de agendamento online para uma hamburgueria artesanal. Neste projeto, trabalhei com foco em: Layout 100% responsivo, adaptado para diferentes tamanhos de tela. Design moderno e minimalista, utilizando a flexibilidade do Tailwind para estilização rápida e eficiente. Organização semântica do HTML, garantindo uma boa estrutura e legibilidade do código. Experiência visual fluida, com transições suaves e elementos bem posicionados.",
-        imagem: "./DevBurguer.png",
-        tecnologias: ["html","javascript", "tailwindcss"],
-        linkProjeto: "https://projeto-devburgueria.vercel.app",
-        linkRepositorio: "https://github.com/Davi2004/Projeto-DevBurgueria"
-    },
-    {
-        titulo: "DevBarber",
-        descricao: "O DevBarber é um site institucional moderno e responsivo, desenvolvido com o objetivo de representar uma barbearia fictícia que valoriza o estilo, a tradição e a experiência do cliente. Neste projeto, temos por destaque, o layout responsivo, adaptado para todos os dispositivos, com foco em acessibilidade e boa navegação, design elegante e masculino, com uma paleta de cores sóbria e elementos que remetem ao universo das barbearias clássicas, interatividade como animações, efeitos de rolagem suave e navegação dinâmica e uma estilização modular, permitindo melhor organização e reaproveitamento de estilos.",
-        imagem: "./DevBarber.png",
-        tecnologias: ["html", "css", "javascript"],
-        linkProjeto: "https://projeto-devbarber.vercel.app/",
-        linkRepositorio: "https://github.com/Davi2004/Projeto-DevBarber"
-    },
-    {
         titulo: "ToDoList",
         descricao: "O ToDoList é um website criado para ser um aliado perfeito na gestão do tempo e na organização das suas tarefas diárias! Sendo projetado para ajudar você a maximizar sua produtividade e manter-se no controle de sua agenda. Com ele, você pode adicionar, editar e excluir tarefas a qualquer momento. Todas as informações ficam salvas no navegador via LocalStorage, garantindo que nada se perca ao recarregar a página. Com uma interface intuitiva e recursos personalizados, você pode facilmente criar tarefas e monitorar o seu progresso durante o dia.",
         imagem: "./ToDoList.png",
@@ -69,37 +53,36 @@ const projetos = [
 
 function Home() {
     return (
-        <main>
+        <main className='container'>
             
             <section className='hero'>
-                <div className='content'>
+                
 
-                    <div className='conteudo'>
-            
-                        <h1> Davi Rocha Pereira </h1>
-                        <h2> Desenvolvedor Web </h2>
+                <div className='conteudo'>
+        
+                    <h1> Davi Rocha Pereira </h1>
+                    <h2> Desenvolvedor Web </h2>
 
-                        <div className='buttons'>
-                            <a href="https://github.com/Davi2004" target='_blank' rel='noreferrer' className="btn"> <Github size={20} color='black' /> GitHub </a>
-                            
-                            <a href="/Currículo.pdf" target='_blank' rel='noreferrer' className='btn'> <FileUser size={20} color='black'/> Download CV </a>
+                    <div className='buttons'>
+                        <a href="https://github.com/Davi2004" target='_blank' rel='noreferrer' className="btn"> <Github size={20} color='black' /> GitHub </a>
+                        
+                        <a href="/Currículo.pdf" target='_blank' rel='noreferrer' className='btn'> <FileUser size={20} color='black'/> Download CV </a>
 
-                            <a href="https://wa.me/5577991718244?text=Olá,%20gostaria%20de%20conversar%20sobre%20algumas%20ideias!" target='_blank' rel='noreferrer' className='btn'> <Mail size={20} color='black'/> Entre em contato </a>
+                        <a href="https://wa.me/5577991718244?text=Olá,%20gostaria%20de%20conversar%20sobre%20algumas%20ideias!" target='_blank' rel='noreferrer' className='btn'> <Mail size={20} color='black'/> Entre em contato </a>
 
-                            <a href="https://www.linkedin.com/in/davipereira-dev" target='_blank' rel='noreferrer' className="btn"> <Linkedin size={20} color='black' /> LinkedIn </a>
-                        </div>
-
-                        <p>
-                            Olá, sou formado em Análise e desenvolvimento de Sistemas na Impacta SP e estou em constante aprendizado. Tenho foco em usabilidade, performance e boas práticas de desenvolvimento, criando soluções que realmente agregam valor ao usuário.
-                        </p>
-
-                        <p>
-                            Estou iniciando minha carreira em desenvolvimento web e procuro minha primeira oportunidade profissional para colaborar em projetos inovadores, aprender com profissionais experientes e contribuir para resultados concretos. Acredito que tecnologia é ferramenta de transformação e estou pronto para gerar impacto real com meu trabalho.
-                        </p>
-
+                        <a href="https://www.linkedin.com/in/davipereira-dev" target='_blank' rel='noreferrer' className="btn"> <Linkedin size={20} color='black' /> LinkedIn </a>
                     </div>
 
+                    <p>
+                        Olá, sou formado em Análise e desenvolvimento de Sistemas na Impacta SP e estou em constante aprendizado. Tenho foco em usabilidade, performance e boas práticas de desenvolvimento, criando soluções que realmente agregam valor ao usuário.
+                    </p>
+
+                    <p>
+                        Estou iniciando minha carreira em desenvolvimento web e procuro minha primeira oportunidade profissional para colaborar em projetos inovadores, aprender com profissionais experientes e contribuir para resultados concretos. Acredito que tecnologia é ferramenta de transformação e estou pronto para gerar impacto real com meu trabalho.
+                    </p>
+
                 </div>
+
             </section>
 
             <section id="hardskills" className="hardSkills">

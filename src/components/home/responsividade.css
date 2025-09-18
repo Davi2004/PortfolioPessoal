@@ -1,8 +1,8 @@
 /* Área do Ínicio */
 
 @media screen and (max-width: 1023px) {
-    .content {
-        gap: 40px;
+    .conteudo {
+        width: 90%;
     }
 
     .conteudo h1 {
@@ -12,23 +12,10 @@
     .conteudo h2 {
         font-size: 1.2rem;
     }
-
-    .buttons {
-        flex-direction: column;
-        gap: 20px;
-    }
 }
 
 @media screen and (max-width: 764px) {
     .hero {
-        height: auto;
-        padding: 40px 10px;
-    }
-
-    .content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
         gap: 30px;
     }
 
@@ -40,55 +27,22 @@
         font-size: 1rem;
     }
 
-    .buttons {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .btn {
-        padding: 10px 16px;
-        font-size: 0.9rem;
-    }
-}
-
-/* Área do Sobre: */
-
-@media screen and (max-width: 1023px) {
-    
-    .conteudo {
-        flex-direction: column;
-        align-items: center;
-        padding: 40px;
-    }
-
-    h2 {
-        font-size: 1.7rem;
-    }
-
-    p {
-        font-size: 0.95rem;
-    }
-}
-
-@media screen and (max-width: 764px) {
-    .conteudo {
-        flex-direction: column;
-        padding: 30px 20px;
-        gap: 30px;
-    }
-
-    .conteudo {
-        text-align: center;
-    }
-
-    .conteudo h2 {
-        font-size: 1.5rem;
-    }
-
     .conteudo p {
         font-size: 0.9rem;
     }
 
+    .buttons {
+        gap: 15px;
+        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 10px auto;
+    }
+
+    .btn {
+        padding: 10px 12px;
+        font-size: 0.8rem;
+    }
 }
 
 /* Área das HardSkills: */
@@ -102,40 +56,29 @@
     align-items: center;
 }
 
-@media (max-width: 1023px) {
-    .icons-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .containerSkills {
-    max-width: 800px;
-    width: 100%;
-    padding: 40px 20px;
-    margin: 0 30px;
-
-    box-shadow: 0 0 35px rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-
-        h2 {
-            margin-bottom: 10px;
-            text-transform: uppercase;
-            font-size: 1.5rem;
-            filter: drop-shadow(2px 2px 1px rgb(0, 0, 0));
-        }
-
-        p {
-            font-size: 1rem;
-            margin-bottom: 20px;
-            filter: drop-shadow(1px 2px 1px rgb(0, 0, 0));
-        }
-    }
-
-}
-
 @media (max-width: 764px) {
+    .hardSkills {
+        height: calc(120vh - 80px);
+    }
+    
+    .containerSkills {
+        max-width: 320px;
+        padding: 20px;
+    }
+    
     .icons-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 16px;
+    }
+
+    .icon-item {
+        img {
+            width: 30px;
+        }
+
+        span {
+            font-size: 0.8rem;
+        }
     }
 }
 
