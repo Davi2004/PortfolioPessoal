@@ -245,6 +245,12 @@
 .contatos {
     color: #FFF;
     text-align: center;
+    height: calc(90vh - 80px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
     h1{
         font-size: 35px;
@@ -254,31 +260,27 @@
 
 .containerContatos {
     max-width: 1000px;
+    margin: 30px auto 0;
+    
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    margin: 5% auto;
+    flex-direction: column;
+    gap: 20px;
 
     .colors {
-        width: 300px;
-        height: 300px;
-        background-color: #777;
-        border-radius: 15px;
-        border: 2px solid black;
-    }
-
-    .one, .two {
         display: flex;
-        flex-direction: column;
         align-items: center;
-        justify-content: center;
-        gap: 20px;
-        padding: 10px;
-
-        color: #111;
-        font-weight: bold;                
+        gap: 15px;
         
+        padding: 20px;
+        width: 700px;
+        height: 60px;
+        
+        background-color: #777;
+        border: 2px solid black;
+        border-radius: 15px;
+        color: #111;
+        font-weight: bold;
+
         a {
             color: #111;
             text-decoration: none;
@@ -289,6 +291,5 @@
             text-underline-offset: 4px;
         }
         
-    }
-    
+    }    
 }
