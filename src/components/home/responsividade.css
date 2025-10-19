@@ -116,11 +116,11 @@
     
     .containerContatos {
         flex-direction: column;
-        gap: 30px;
+        font-size: 12px;
 
         .colors {
-            width: 250px;
-            height: 250px;
+            width: 350px;
+            height: 60px;
         }   
     }
 }
