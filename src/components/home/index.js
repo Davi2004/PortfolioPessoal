@@ -1,5 +1,6 @@
-import '../home/style.css'
-import '../home/responsividade.css'
+import { useState } from 'react';
+import '../home/style.css';
+import '../home/responsividade.css';
 import { Mail, FileUser, Linkedin, Github } from 'lucide-react'
 import { PhoneCall, MessageCircle } from 'lucide-react';
 
@@ -52,6 +53,9 @@ const projetos = [
 ]
 
 function Home() {
+    const [activeProjectIndex, setActiveProjectIndex] = useState(0);
+    const [fade, setFade] = useState(false)
+    
     return (
         <main className='container'>
             
@@ -106,60 +110,89 @@ function Home() {
             </section>
 
             <section id='projetos' className='projetos'>
-
                 <div className="containerProjetos">
-                    
                     <h1>Projetos</h1>
                     <p>Veja alguns projetos que desenvolvi.</p>
 
-                    <div className="gridProjetos">
-
-                        {projetos.map((projeto, i) => (
-
-                            <div className="cardProjetoHorizontal" key={i}>
-                            
-                                <div className="imagemContainer">
-                                    <img src={projeto.imagem} alt={projeto.titulo} className="imagemProjetoHorizontal" />
+                    {/* ✅ NOVO SISTEMA DE TABS */}
+                    {(() => {
+                        return (
+                            <div>
+                                {/* Abas (botões) */}
+                                <div className="tabsProjetos">
+                                    {projetos.map((projeto, index) => (
+                                    <button
+                                        key={index}
+                                        onClick={() => {
+                                            setFade(true);
+                                            setTimeout(() => {
+                                                setActiveProjectIndex(index);
+                                                setFade(false);
+                                            }, 400)
+                                        }}
+                                        className={activeProjectIndex === index ? "tab active" : "tab"}
+                                    >
+                                        {projeto.titulo}
+                                    </button>
+                                    ))}
                                 </div>
 
-                                <div className="infoProjetoHorizontal">
-                                    
-                                    <div className="headerProjeto">
-                                        <h3>{projeto.titulo}</h3>
-                                        
-                                        <div className="techs">
-                                            {projeto.tecnologias.map((tech, j) => (
+                                {/* Card ativo */}
+                                <div className={`cardWrapper ${fade ? "fade" : ""}`}>
+                                    {(() => {
+                                        const projeto = projetos[activeProjectIndex];
+                                        return (
+                                        <div className="cardProjetoHorizontal">
+                                            <div className="imagemContainer">
                                             <img
-                                                key={j}
-                                                src={iconMap[tech.toLowerCase()]}
-                                                alt={tech}
-                                                title={tech}
-                                                className="iconTech"
+                                                src={projeto.imagem}
+                                                alt={projeto.titulo}
+                                                className="imagemProjetoHorizontal"
                                             />
-                                            ))}
+                                            </div>
+                                            <div className="infoProjetoHorizontal">
+                                            <div className="headerProjeto">
+                                                <h3>{projeto.titulo}</h3>
+                                                <div className="techs">
+                                                {projeto.tecnologias.map((tech, j) => (
+                                                    <img
+                                                    key={j}
+                                                    src={iconMap[tech.toLowerCase()]}
+                                                    alt={tech}
+                                                    title={tech}
+                                                    className="iconTech"
+                                                    />
+                                                ))}
+                                                </div>
+                                            </div>
+                                            <p>{projeto.descricao}</p>
+                                            <div className="botoesProjeto">
+                                                <a
+                                                href={projeto.linkProjeto}
+                                                className="btn"
+                                                target="_blank"
+                                                rel="noreferrer"
+                                                >
+                                                Ver Projeto
+                                                </a>
+                                                <a
+                                                href={projeto.linkRepositorio}
+                                                className="btn"
+                                                target="_blank"
+                                                rel="noreferrer"
+                                                >
+                                                Repositório
+                                                </a>
+                                            </div>
+                                            </div>
                                         </div>
-
-                                    </div>
-
-                                    <p>{projeto.descricao}</p>
-
-                                    <div className="botoesProjeto">
-                                        
-                                        <a href={projeto.linkProjeto} className="btn" target="_blank" rel="noreferrer">Ver Projeto</a>
-                                        <a href={projeto.linkRepositorio} className="btn" target="_blank" rel="noreferrer">Repositório</a>
-                                        
-                                    </div>
-
+                                        );
+                                    })()}
                                 </div>
-
                             </div>
-                            
-                        ))}
-                    
-                    </div>
-
+                        );
+                    })()}
                 </div>
-
             </section>
 
             <section id='contato' className='contatos'>

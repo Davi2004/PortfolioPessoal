@@ -146,7 +146,7 @@
     display: flex;
     color: white;
     margin: 50px;
-    height: calc(170vh - 80px);
+    height: calc(120vh - 80px);
 }
 
 .containerProjetos {
@@ -167,37 +167,49 @@
     }
 }
 
-.gridProjetos {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
 .cardProjetoHorizontal {
     display: flex;
-
-    overflow: hidden;
-
-    background-color: #111;
-    border: 1px solid #fff;
+    align-items: center;
+    justify-content: space-between;
+    background: #111;
+    border: 1px solid #FFF;
     border-radius: 12px;
+    overflow: hidden;
+    padding: 20px;
+    gap: 20px;
 }
 
 .imagemContainer {
     flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mockupNotebook {
+  background: #000;
+  border: 2px solid #555;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.2);
 }
 
 .imagemProjetoHorizontal {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    max-width: 420px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    background-color: #000; /* caso precise preencher bordas */
+    border: 1px solid #222;
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
 }
 
 .infoProjetoHorizontal {
-    flex: 2;
-    padding: 20px;
+    flex: 1.2;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
     p {
         text-align: justify;
@@ -238,6 +250,15 @@
 
 .botoesProjeto .btn:hover {
     background-color: #ddd;
+}
+
+.cardWrapper {
+    position: relative;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.cardWrapper.fade {
+    opacity: 0;
 }
 
 /* Área de Contatos: */
@@ -292,4 +313,54 @@
         }
         
     }    
+}
+
+/* ==== TABS dos Projetos ==== */
+
+.tabsProjetos {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tab {
+  padding: 8px 16px;
+  background: #222;
+  border-radius: 8px;
+  border: 1px solid #444;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.tab:hover {
+  background: #333;
+}
+
+.tab.active {
+  background: #00d4ff;
+  color: #000;
+}
+
+/* Ajustes visuais para manter harmonia */
+.cardWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.cardProjetoHorizontal {
+  background: #111;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 900px;
+  display: flex;
+  gap: 20px;
+  border: 1px solid #fff;
+}
+
+.infoProjetoHorizontal p {
+  text-align: justify;
 }

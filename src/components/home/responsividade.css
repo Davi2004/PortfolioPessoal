@@ -86,21 +86,31 @@
 
 @media screen and (max-width: 764px) {
     .projetos {
-        height: calc(210vh - 80px);
+        height: calc(150vh - 80px);
     }
     
     .cardProjetoHorizontal {
         display: flex;
         flex-direction: column; /* <<< imagem em cima, texto embaixo */
+        text-align: center;
     }
 
     .imagemContainer {
-        max-height: 250px; /* limita altura */
-        overflow: hidden;
+        width: 100%;
     }
 
     .botoesProjeto {
+        margin: auto;
+    }
+
+    .tabsProjetos {
+        overflow-x: auto;
+        white-space: nowrap;
         justify-content: center;
+    }
+
+    .tab {
+        flex-shrink: 0;
     }
 
 }
