@@ -70,7 +70,7 @@ function Home() {
                     <div className='buttons'>
                         <a href="https://github.com/Davi2004" target='_blank' rel='noreferrer' className="btn"> <Github size={20} color='black' /> GitHub </a>
                         
-                        <a href="/Currículo.pdf" target='_blank' rel='noreferrer' className='btn'> <FileUser size={20} color='black'/> Download CV </a>
+                        <a href="../../../public/Currículo Pessoal.pdf" target='_blank' rel='noreferrer' className='btn'> <FileUser size={20} color='black'/> Download CV </a>
 
                         <a href="https://wa.me/5577991718244?text=Olá,%20gostaria%20de%20conversar%20sobre%20algumas%20ideias!" target='_blank' rel='noreferrer' className='btn'> <MessageCircle size={20} color='black'/> Entre em contato </a>
 
