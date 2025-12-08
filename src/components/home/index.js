@@ -10,14 +10,12 @@ const skills = [
     { name: 'JavaScript', img: 'https://cdn-icons-png.flaticon.com/128/5968/5968292.png'},
     { name: 'TypeScript', img: 'https://cdn-icons-png.flaticon.com/128/5968/5968381.png'},
     { name: 'React JS', img: 'https://cdn-icons-png.flaticon.com/128/10832/10832132.png'},
-    { name: 'Node JS', img: 'https://cdn-icons-png.flaticon.com/128/919/919825.png'},
     { name: 'Tailwind CSS', img: 'https://images.seeklogo.com/logo-png/35/2/tailwind-css-logo-png_seeklogo-354675.png'},
     { name: 'Git', img: 'https://cdn-icons-png.flaticon.com/128/11518/11518876.png'},
     { name: 'GitHub', img: 'https://cdn-icons-png.flaticon.com/128/733/733609.png'},
     { name: 'Figma', img: 'https://cdn-icons-png.flaticon.com/128/5968/5968705.png'},
     { name: 'Firebase', img: 'https://www.gstatic.com/devrel-devsite/prod/v67bcaf34cc3cf781a8625662f12ba4f4fe75fddd41862c37da55318ba5bb8ade/firebase/images/touchicon-180.png'},
     { name: 'Vite', img: 'https://img.icons8.com/color/512/vite.png'},
-    { name: 'SQL Server', img: 'https://cdn-icons-png.flaticon.com/128/5732/5732837.png'},
 ]
 
 const iconMap = {
@@ -26,15 +24,12 @@ const iconMap = {
   javascript: skills.find(s => s.name.toLowerCase().includes('javascript'))?.img,
   typescript: skills.find(s => s.name.toLowerCase().includes('typescript'))?.img,
   react: skills.find(s => s.name.toLowerCase().includes('react'))?.img,
-  node: skills.find(s => s.name.toLowerCase().includes('node'))?.img,
   tailwindcss: skills.find(s => s.name.toLowerCase().includes('tailwind'))?.img,
   git: skills.find(s => s.name.toLowerCase().includes('git'))?.img,
   github: skills.find(s => s.name.toLowerCase().includes('github'))?.img,
   figma: skills.find(s => s.name.toLowerCase().includes('figma'))?.img,
   firebase: skills.find(s => s.name.toLowerCase().includes('firebase'))?.img,
-  sql: skills.find(s => s.name.toLowerCase().includes('sql'))?.img,
   vite: skills.find(s => s.name.toLowerCase().includes('vite'))?.img,
-  
 };
 
 const projetos = [
