@@ -1,0 +1,203 @@
+/* Área dos Projetos: */
+
+.projetos {
+    display: flex;
+    color: white;
+    height: calc(120vh - 80px);
+}
+
+.containerProjetos {
+    max-width: 800px;
+    margin: auto;
+
+    h1 {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 40px;
+        filter: drop-shadow(3px 3px 1px rgb(0, 0, 0));
+    }
+
+    p {
+        filter: drop-shadow(2px 2px 1px rgb(0, 0, 0));
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+.cardProjetoHorizontal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #111;
+    border: 1px solid #FFF;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 20px;
+    gap: 20px;
+}
+
+.imagemContainer {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagemProjetoHorizontal {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    background-color: #000; /* caso precise preencher bordas */
+    border: 1px solid #222;
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+}
+
+.infoProjetoHorizontal {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+
+    p {
+        text-align: justify;
+    }
+}
+
+.headerProjeto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 15px;
+    padding: 0 15px;
+    height: 50px;
+    z-index: 0;
+}
+
+.techs {
+    display: flex;
+    gap: 10px;
+}
+
+.iconTech {
+    width: 30px;
+    transition: transform 0.3s;
+}
+
+.iconTech:hover {
+    transform: scale(1.15);
+}
+
+.botoesProjeto {
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+}
+
+.botoesProjeto .btn {
+    padding: 8px 16px;
+    background-color: #fff;
+    color: black;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.botoesProjeto .btn:hover {
+    background-color: #ddd;
+}
+
+.cardWrapper {
+    position: relative;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.cardWrapper.fade {
+    opacity: 0;
+}
+
+/* ==== TABS dos Projetos ==== */
+
+.tabsProjetos {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tab {
+  padding: 8px 16px;
+  background: #222;
+  border-radius: 8px;
+  border: 1px solid #444;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.tab:hover {
+  background: #333;
+}
+
+.tab.active {
+  background: #00d4ff;
+  color: #000;
+}
+
+/* Ajustes visuais para manter harmonia */
+.cardWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.cardProjetoHorizontal {
+  background: #111;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 900px;
+  display: flex;
+  gap: 20px;
+  border: 1px solid #fff;
+}
+
+.infoProjetoHorizontal p {
+  text-align: justify;
+}
+
+/* Área dos Projetos: */
+
+@media screen and (max-width: 764px) {
+    .projetos {
+        height: calc(150vh - 80px);
+        padding: 20px;
+    }
+    
+    .cardProjetoHorizontal {
+        display: flex;
+        flex-direction: column; /* <<< imagem em cima, texto embaixo */
+        text-align: center;
+    }
+
+    .imagemContainer {
+        width: 100%;
+    }
+
+    .botoesProjeto {
+        margin: auto;
+    }
+
+    .tabsProjetos {
+        overflow-x: auto;
+        white-space: nowrap;
+        justify-content: center;
+    }
+
+    .tab {
+        flex-shrink: 0;
+    }
+
+}
