@@ -16,7 +16,7 @@ function Home() {
                     <div className={styles.buttons}>
                         <a href="https://github.com/Davi2004" target='_blank' rel='noreferrer' className={styles.btn}> <Github size={20} color='black' /> GitHub </a>
                         
-                        <a href="/curriculo-davi-pereira.pdf" target='_blank' rel='noreferrer' className={styles.btn}> <FileUser size={20} color='black'/> Download CV </a>
+                        <a href="./Currículo Pessoal.pdf" target='_blank' rel='noreferrer' className={styles.btn}> <FileUser size={20} color='black'/> Download CV </a>
 
                         <a href="https://wa.me/5577991718244?text=Olá,%20gostaria%20de%20conversar%20sobre%20algumas%20ideias!" target='_blank' rel='noreferrer' className={styles.btn}> <MessageCircle size={20} color='black'/> Entre em contato </a>
 
