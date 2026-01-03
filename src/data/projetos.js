@@ -23,4 +23,12 @@ export const projetos = [
         linkProjeto: "https://dev-links-zeta-olive.vercel.app",
         linkRepositorio: "https://github.com/Davi2004/DevLink"
     },
+    {
+        titulo: "WebCarros",
+        descricao: "O Web Carros é um website desenvolvido para simular um sistema real de cadastro e gerenciamento de veículos, oferecendo uma solução prática e organizada para a exibição de automóveis. O projeto foi pensado para facilitar o controle das informações dos carros, permitindo o cadastro, edição e exclusão de dados de forma simples e eficiente. A aplicação conta com armazenamento em banco de dados e upload de imagens, garantindo que todas as informações e fotos dos veículos fiquem salvas com segurança e disponíveis sempre que necessário. Com uma interface moderna e intuitiva, o Web Carros proporciona uma experiência fluida tanto para quem gerencia quanto para quem visualiza os veículos cadastrados, simulando o funcionamento de uma plataforma profissional do mercado automotivo.",
+        imagem: "./WebCarros.png",
+        tecnologias: ["vite", "react", "typescript", "tailwindcss", "firebase"],
+        linkProjeto: "https://webcarros-25323.web.app",
+        linkRepositorio: "https://github.com/Davi2004/WebCarros"
+    },
 ]
