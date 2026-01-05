@@ -31,4 +31,12 @@ export const projetos = [
         linkProjeto: "https://webcarros-25323.web.app",
         linkRepositorio: "https://github.com/Davi2004/WebCarros"
     },
+    {
+        titulo: "PetShop",
+        descricao: "O PetShop é um projeto criado com o objetivo de simular um e-commerce voltado para produtos pet, utilizando uma API fictícia para a exibição dos dados. O desenvolvimento foi focado na criação de uma interface moderna e responsiva, adaptada para diferentes tamanhos de tela, garantindo uma boa experiência do usuário. Durante o projeto, foi aplicado o gerenciamento de estado com Context API no carrinho de compras, juntamente com a persistência de dados utilizando LocalStorage, evitando a perda de informações ao recarregar a página.",
+        imagem: "./Projeto PetShop.png",
+        tecnologias: ["vite", "react", "typescript", "tailwindcss"],
+        linkProjeto: "https://pet-shop-one-amber.vercel.app",
+        linkRepositorio: "https://github.com/Davi2004/PetShop"
+    },
 ]
